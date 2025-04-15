@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'YOUR_OWN_APPLICATION_REPO_URL', branch: 'main'
+                git url: 'https://github.com/divyajai12/app-java-ops.git', branch: 'main'
             }
         }
 
