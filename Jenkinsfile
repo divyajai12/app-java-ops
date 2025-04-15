@@ -2,12 +2,12 @@ pipeline {
     agent any
     tools {
         // Use the JDK version named "Java 21" configured in Jenkins
-        jdk 'Java'
+        jdk 'Java 21'
     }
 
     environment {
         // Defining JAVA_HOME may be optional, depending on your Jenkins configuration
-        JAVA_HOME = tool 'Java'
+        JAVA_HOME = tool 'Java 21'
     }
     stages {
         stage('Checkout') {
